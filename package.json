@@ -1,6 +1,6 @@
 {
   "name": "node-db2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple connection for DB2 databases",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,10 @@
     "JT400"
   ],
   "author": "Diego Alvarez",
+  "repository": {
+    "url": "https://github.com/D4lvarez/node_db2",
+    "type": "git"
+  },
+  "homepage": "https://github.com/D4lvarez/node_db2/blob/main/README.md",
   "license": "ISC"
 }
