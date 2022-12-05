@@ -4,6 +4,22 @@ const { formatResultQuery } = require('./utils')
 
 function executeQuery({jdbcUrl, userDb, passwordDb, query}) {
 
+    if (jdbcUrl == null || jdbcUrl.length === 0) {
+        throw 'jdbcUrl is required.';
+    }
+
+    if (userDb == null || userDb.length === 0) {
+        throw 'userDb is required.';
+    }
+
+    if (passwordDb == null || passwordDb.length === 0) {
+        throw 'passwordDb is required.';
+    }
+
+    if (query == null || query.length === 0) {
+        throw 'query is required.';
+    }
+
     return new Promise((resolve, reject) => {
 
         const jarCmd = spawn("java", [
