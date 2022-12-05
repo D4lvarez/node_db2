@@ -1,0 +1,12 @@
+{
+  "name": "node_jar_jt400",
+  "version": "1.0.0",
+  "description": "Simple connection for DB2 databases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["DB2", "NodeJs", "JT400"],
+  "author": "Diego Alvarez",
+  "license": "ISC"
+}
