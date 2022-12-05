@@ -1,6 +1,6 @@
 const { spawn } = require("child_process");
 
-const { formatResultQuery } = require('./utils')
+const { formatResultQuery, get_current_path } = require('./utils')
 
 function executeQuery({jdbcUrl, userDb, passwordDb, query}) {
 
@@ -8,7 +8,7 @@ function executeQuery({jdbcUrl, userDb, passwordDb, query}) {
 
         const jarCmd = spawn("java", [
             "-jar",
-            './driver/jt400.jar',
+            `${__dirname}/'driver/jt400.jar'`,
             jdbcUrl,
             userDb,
             passwordDb
