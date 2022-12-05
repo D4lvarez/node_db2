@@ -1,5 +1,5 @@
 {
-  "name": "node_jar_jt400",
+  "name": "node-db2",
   "version": "1.0.0",
   "description": "Simple connection for DB2 databases",
   "main": "index.js",
