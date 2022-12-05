@@ -2,7 +2,7 @@ const { spawn } = require("child_process");
 
 const { formatResultQuery } = require('./utils')
 
-function executeJar({jdbcUrl, userDb, passwordDb, query}) {
+function executeQuery({jdbcUrl, userDb, passwordDb, query}) {
 
     return new Promise((resolve, reject) => {
 
@@ -34,4 +34,8 @@ function executeJar({jdbcUrl, userDb, passwordDb, query}) {
             resolve(formatResultQuery(result));
         })
     });
+}
+
+module.exports = {
+    executeQuery
 }
