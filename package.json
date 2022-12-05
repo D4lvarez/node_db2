@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "DB2",
-    "NodeJs",
-    "JT400"
+    "db2",
+    "node",
+    "jt400"
   ],
   "author": "Diego Alvarez",
   "repository": {
